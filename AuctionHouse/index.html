@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Auction House with SignalR</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Auction House with SignalR</h1>
+        <div class="profile">
+            Hello, <span class="profile-name"></span>!
+        </div>
+        <div class="flash-message"></div>
+    </header>
+
+    <p>This is an auctoin house. You can bid on others' auction. or start an auction of your own.</p>
+
+    <h2>Create an auction</h2>
+    <div>
+        <label for="new-auction-item-name">Item name: </label><input id="new-auction-item-name" type="text" />
+        <label for="new-auction-item-price">Start price: </label><input id="new-auction-item-price" class="price" type="text" />
+        <a id="new-auction-button" href="#">Create Auction</a>
+    </div>
+
+    <h2>Auctions right now</h2>
+    <a id="auctions-list-refresh" href="#">Refresh list</a>
+    <ul class="auctions-list">
+    </ul>
+    
+    <script src="Scripts/jquery-1.6.4.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.0.2.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="Scripts/auction-house.js"></script>
+</body>
+</html>

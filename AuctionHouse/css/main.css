@@ -1,0 +1,102 @@
+﻿html, body, table, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+body {
+    font-size: 12pt;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+header {
+    display: block;
+    position: relative;
+    background: darkblue;
+    color: seashell;
+    padding: 20px;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+}
+
+header .profile {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header .flash-message {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+}
+
+.flash-message.error {
+    background-color: lightcoral;
+}
+
+.flash-message.success {
+    background-color: lightgreen;
+}
+
+label {
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+input {
+    border: solid 1px gray;
+}
+
+input.price {
+    width: 40px;
+    text-align: right;
+}
+
+a {
+    color: black;
+}
+
+ul.auctions-list {
+    list-style: none outside none;
+    margin: 10px 0;
+}
+
+.auctions-list .auction-item {
+    display: block;
+    padding: 10px;
+    border-bottom: solid 1px lightgrey;
+}
+
+.auction-item .name,
+.auction-item .current-price,
+.auction-item .bid,
+.auction-item a {
+    margin: 0 10px;
+}
+
+.auction-item.owned {
+    background: skyblue;
+}
+
+.auction-item.winning {
+    background: lightgreen;
+}
+
+.auction-item.loosing {
+    background: lightcoral;
+}
+
+.auction-item.closed {
+    background: gray;
+}
